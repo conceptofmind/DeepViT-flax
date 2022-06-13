@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
   name = 'deepvit-flax',
   packages = find_packages(exclude=['examples']),
-  version = 'v0.0.2',
+  version = 'v0.0.1',
   license='MIT',
   description = 'Deep Vision Transformer (DeepViT) - Flax',
   author = 'Enrico Shippole',
@@ -35,6 +35,6 @@ setup(
     'Intended Audience :: Developers',
     'Topic :: Scientific/Engineering :: Artificial Intelligence',
     'License :: OSI Approved :: MIT License',
-    'Programming Language :: Python :: 3.9.12',
+    'Programming Language :: Python :: 3.9',
   ],
 )
