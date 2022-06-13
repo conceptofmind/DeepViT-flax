@@ -2,7 +2,7 @@
 
 This <a href="https://arxiv.org/abs/2103.11886">paper</a> notes that ViT struggles to attend at greater depths (past 12 layers), and suggests mixing the attention of each head post-softmax as a solution, dubbed Re-attention. The results line up with the <a href="https://github.com/lucidrains/x-transformers#talking-heads-attention">Talking Heads</a> paper from NLP.
 
-You can use it as follows
+## Usage
 
 ```python
 key = jax.random.PRNGKey(0)
@@ -37,6 +37,13 @@ print(f"Number of parameters in Flax model: {n_params_flax}")
 
 ## Acknowledgements:
 - [Dr. Phil Wang](https://github.com/lucidrains/)
+
+## Todo
+
+- [x] Build model
+- [ ] Implement installer
+- [ ] Implement dataloaders
+- [ ] Implement training
 
 ## Citations
 ```bibtex
