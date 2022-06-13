@@ -1,11 +1,10 @@
 import flax.linen as nn
-from haiku import dropout
 
 import jax
 import jax.numpy as jnp
 from jax.numpy import einsum
 
-from typing import Any, Callable
+from typing import Callable
 
 from einops import rearrange, repeat
 
