@@ -50,6 +50,7 @@ print(f"Number of parameters in Flax model: {n_params_flax}")
 - [x] Implement pip installer
 - [ ] Implement huggingface streaming dataloaders
 - [ ] Implement training script
+- [ ] Add config for training
 
 ## Author:
 - Enrico Shippole
