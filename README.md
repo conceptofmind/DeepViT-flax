@@ -2,6 +2,12 @@
 
 This <a href="https://arxiv.org/abs/2103.11886">paper</a> notes that ViT struggles to attend at greater depths (past 12 layers), and suggests mixing the attention of each head post-softmax as a solution, dubbed Re-attention. The results line up with the <a href="https://github.com/lucidrains/x-transformers#talking-heads-attention">Talking Heads</a> paper from NLP.
 
+## Install
+
+```bash
+$ pip install deepvit-flax
+```
+
 ## Usage
 
 ```python
@@ -41,9 +47,9 @@ print(f"Number of parameters in Flax model: {n_params_flax}")
 ## Todo
 
 - [x] Build model
-- [ ] Implement pip installer
+- [x] Implement pip installer
 - [ ] Implement huggingface streaming dataloaders
-- [ ] Implement training scripy
+- [ ] Implement training script
 
 ## Author:
 - Enrico Shippole
