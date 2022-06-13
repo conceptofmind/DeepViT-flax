@@ -45,6 +45,9 @@ print(f"Number of parameters in Flax model: {n_params_flax}")
 - [ ] Implement dataloaders
 - [ ] Implement training
 
+## Author:
+- Enrico Shippole
+
 ## Citations
 ```bibtex
 @article{zhou2021deepvit,
