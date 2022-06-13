@@ -11,6 +11,10 @@ $ pip install deepvit-flax
 ## Usage
 
 ```python
+import flax
+import numpy as np
+from deepvit_flax import DeepViT
+
 key = jax.random.PRNGKey(0)
 
 img = jax.random.normal(key, (1, 256, 256, 3))
