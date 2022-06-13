@@ -1,1 +1,1 @@
-from deepvit_flax.deepvit import DeepVIT
+from .deepvit import DeepVIT
