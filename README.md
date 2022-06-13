@@ -37,3 +37,13 @@ print(f"Number of parameters in Flax model: {n_params_flax}")
 
 ## Acknowledgements:
 - [Dr. Phil Wang](https://github.com/lucidrains/)
+
+## Citations
+```bibtex
+@article{zhou2021deepvit,
+  title={DeepViT: Towards Deeper Vision Transformer},
+  author={Zhou, Daquan and Kang, Bingyi and Jin, Xiaojie and Yang, Linjie and Lian, Xiaochen and Hou, Qibin and Feng, Jiashi},
+  journal={arXiv preprint arXiv:2103.11886},
+  year={2021}
+}
+```
