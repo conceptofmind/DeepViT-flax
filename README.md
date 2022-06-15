@@ -55,6 +55,7 @@ print(f"Number of parameters in Flax model: {n_params_flax}")
 - [ ] Implement huggingface streaming dataloaders
 - [ ] Implement training script
 - [ ] Add config for training
+- [x] Add to paperswithcode
 
 ## Author:
 - Enrico Shippole
