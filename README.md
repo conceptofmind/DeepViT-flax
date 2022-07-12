@@ -1,6 +1,11 @@
 ## DeepViT-flax
+"Vision transformers (ViTs) have been successfully applied in image classification tasks recently. In this paper, we show that, unlike convolution neural networks (CNNs)that can be improved by stacking more convolutional layers, the performance of ViTs saturate fast when scaled to be deeper. More specifically, we empirically observe that such scaling difficulty is caused by the attention collapse issue: as the transformer goes deeper, the attention maps gradually become similar and even much the same after certain layers. In other words, the feature maps tend to be identical in the top layers of deep ViT models. This fact demonstrates that in deeper layers of ViTs, the self-attention mechanism fails to learn effective concepts for representation learning and hinders the model from getting expected performance gain. Based on above observation, we propose a simple yet effective method, named Re-attention, to re-generate the attention maps to increase their diversity at different layers with negligible computation and memory cost. The pro-posed method makes it feasible to train deeper ViT models with consistent performance improvements via minor modification to existing ViT models. Notably, when training a deep ViT model with 32 transformer blocks, the Top-1 classification accuracy can be improved by 1.6% on ImageNet." - Daquan Zhou, Bingyi Kang, Xiaojie Jin, Linjie Yang, Xiaochen Lian, Zihang Jiang, Qibin Hou, Jiashi Feng
 
-This <a href="https://arxiv.org/abs/2103.11886">paper</a> notes that ViT struggles to attend at greater depths (past 12 layers), and suggests mixing the attention of each head post-softmax as a solution, dubbed Re-attention.
+### Research Paper:
+- https://arxiv.org/abs/2103.11886
+
+### Official repository:
+- https://github.com/zhoudaquan/dvit_repo
 
 ## Acknowledgement:
 I have been greatly inspired by the brilliant code of [Dr. Phil 'Lucid' Wang](https://github.com/lucidrains). Please check out his [open-source implementations](https://github.com/lucidrains) of multiple different transformer architectures and [support](https://github.com/sponsors/lucidrains) his work.
@@ -47,15 +52,6 @@ n_params_flax = sum(
 )
 print(f"Number of parameters in Flax model: {n_params_flax}")
 ```
-
-## Todo
-
-- [x] Build model
-- [x] Implement pip installer
-- [ ] Implement huggingface streaming dataloaders
-- [ ] Implement training script
-- [ ] Add config for training
-- [x] Add to paperswithcode
 
 ## Author:
 - Enrico Shippole
